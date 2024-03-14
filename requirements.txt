@@ -1,0 +1,10 @@
+conda create -n peftlora python==3.10
+conda activate peftlora
+pip install transformers==4.33.3
+pip install datasets==2.16.0
+pip install trl==0.7.7
+pip install peft==0.7.1
+conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install deepspeed==0.10.3
+pip install chardet
+pip install einopss
