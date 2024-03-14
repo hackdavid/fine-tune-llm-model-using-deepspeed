@@ -40,7 +40,8 @@ To set up the environment for running these scripts, follow these steps:
    cd fine-tune-llm-model-using-deepspeed
    ```
 
-3. Install the required libraries:
+3. Install the required libraries:<br>
+   --- make sure to install proper library of transformer depends on your model, i am using 4.33.3 because its good for my model
    ```
    pip install -r requirements.txt
    ```
@@ -61,6 +62,12 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.run --nnodes 1 --nproc_
 ```
 
 Make sure to adjust the configurations in `config.py` and `zero2_config.json` according to your specific requirements.
+
+## References
+1. https://www.deepspeed.ai/getting-started/
+2. https://nlp.stanford.edu/mistral/tutorials/deepspeed.html
+3. https://wandb.ai/byyoung3/ml-news/reports/A-Guide-to-DeepSpeed-Zero-With-the-HuggingFace-Trainer--Vmlldzo2ODkwMDc4
+4. https://huggingface.co/docs/transformers/en/deepspeed
 
 ## Contributing
 
